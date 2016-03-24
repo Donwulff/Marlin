@@ -2026,10 +2026,10 @@
 
 #if defined(__AVR_AT90USB1287__) || defined(__AVR_AT90USB1286__) || defined(__AVR_AT90USB646__) || defined(__AVR_AT90USB647__)
   // SPI
-  #define SCK         DIO9
-  #define MISO        DIO11
-  #define MOSI        DIO10
-  #define SS          DIO8
+  #define SCK         DIO21
+  #define MISO        DIO23
+  #define MOSI        DIO22
+  #define SS          DIO20
 
   // change for your board
   #define DEBUG_LED   DIO31 /* led D5 red */
@@ -2038,7 +2038,7 @@
   pins
   */
 
-  //#define AT90USBxx_TEENSYPP_ASSIGNMENTS // Use Teensy++ 2.0 assignments
+  #define AT90USBxx_TEENSYPP_ASSIGNMENTS // Use Teensy++ 2.0 assignments
   #ifndef AT90USBxx_TEENSYPP_ASSIGNMENTS // Use traditional Marlin pin assignments
 
     #define DIO0_PIN        PINA0
